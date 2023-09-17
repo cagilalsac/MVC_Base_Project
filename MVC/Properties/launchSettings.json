@@ -1,0 +1,30 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:61232", // çalışmama durumunda port numarası değiştirilmesi gerekebilir
+      "sslPort": 44319 // çalışmama durumunda port numarası değiştirilmesi gerekebilir
+    }
+  },
+  "profiles": {
+    "PROD (Kestrel)": { // production (canlı)
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7039;http://localhost:5142", // çalışmama durumunda port numarası değiştirilmesi gerekebilir
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" // view'larda değişiklik yapıldığında projenin baştan başlatılma gerekliliğini ortadan kaldırır
+      }
+    },
+    "DEV (IIS Express)": { // development (geliştirme)
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"
+      }
+    }
+  }
+}
