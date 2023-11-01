@@ -5,12 +5,25 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+	
+  <ItemGroup>
+	<Compile Remove="Templates\**" />
+  </ItemGroup>	
 
   <ItemGroup>
-    <Compile Remove="Templates\**" />
-    <Content Remove="Templates\**" />
-    <EmbeddedResource Remove="Templates\**" />
-    <None Remove="Templates\**" />
+    <None Include="Templates\ControllerGenerator\ApiControllerWithActions.cshtml" />
+    <None Include="Templates\ControllerGenerator\ApiControllerWithContext.cshtml" />
+    <None Include="Templates\ControllerGenerator\ApiEmptyController.cshtml" />
+    <None Include="Templates\ControllerGenerator\ControllerWithActions.cshtml" />
+    <None Include="Templates\ControllerGenerator\EmptyController.cshtml" />
+    <None Include="Templates\ControllerGenerator\MvcControllerWithContext.cshtml" />
+    <None Include="Templates\ViewGenerator\Create.cshtml" />
+    <None Include="Templates\ViewGenerator\Delete.cshtml" />
+    <None Include="Templates\ViewGenerator\Details.cshtml" />
+    <None Include="Templates\ViewGenerator\Edit.cshtml" />
+    <None Include="Templates\ViewGenerator\Empty.cshtml" />
+    <None Include="Templates\ViewGenerator\List.cshtml" />
+    <None Include="Templates\ViewGenerator\_ValidationScriptsPartial.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
